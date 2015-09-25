@@ -1,0 +1,26 @@
+main{
+  position: relative;
+  margin: 0 auto;
+  min-height: 100%;
+  background: #f9f6f2;
+  background: #ffffff;
+}
+
+.container {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container--main, .container--auth, .container--page {
+  margin-top: 5rem;
+}
+
+.container--home {
+  margin-top: 10rem;
+}
+
+#content {
+  margin: 0 auto;
+}
+

@@ -1,0 +1,63 @@
+
+p, li, label, input, table, a {
+  font-family: $base-font-family;
+  line-height: 1.5rem;
+  color: #333;
+}
+
+.numbers {
+  font-family: $base-number-family;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-accent;
+  font-style: italic;
+}
+
+a:hover {
+  color: $primary-accent;
+}
+
+.brand {
+  font-family: $base-font-family;
+  //font-weight: $header-font-weight;
+  font-size: 1.5rem;
+  color: $primary-base;
+}
+
+h1 {
+  font-family: $base-font-family;
+  font-weight: $light;
+  font-size: 3.2rem;
+  color: $greyscale-4;
+}
+
+h2 {
+  display: block;
+  font-family: $base-font-family;
+  font-weight: $light;
+  font-size: 2rem;
+  color: $greyscale-4;
+
+  margin-bottom: 2rem;
+
+}
+
+h3 {
+  font-family: $base-font-family;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #6e6e6e;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
