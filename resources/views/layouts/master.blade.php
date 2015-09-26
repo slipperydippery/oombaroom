@@ -1,9 +1,7 @@
 @include('layouts.partials.header')
 <main>
     <div id="wrapper">
-        <nav>
-            {{-- @include('layouts.partials.nav') --}}
-        </nav>
+        @include('layouts.partials.nav')
 
 
         <div id="content">

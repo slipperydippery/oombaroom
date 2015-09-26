@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+      <file leaf-file-name="user.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/users/user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18490566" vertical-offset="0" max-vertical-offset="1400">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.57462686" vertical-offset="924" max-vertical-offset="3052">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -44,17 +44,24 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_typography.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_base.scss" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/.bowerrc" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/resources/assets/sass/_settings.scss" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_layout.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/vendor/bower_components/foundation/scss/foundation/components/_global.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_users.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_typography.scss" />
+        <option value="$PROJECT_DIR$/resources/views/users/user.blade.php" />
       </list>
     </option>
   </component>
@@ -68,9 +75,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="x" value="-2" />
+    <option name="width" value="1266" />
     <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -114,86 +120,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oombaroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="foundation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,7 +307,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-2" y="0" width="1266" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -391,7 +317,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -435,42 +361,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.103225805" vertical-offset="0" max-vertical-offset="1085">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.077419356" vertical-offset="84" max-vertical-offset="1904">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74285716" vertical-offset="454" max-vertical-offset="1568">
           <caret line="45" column="19" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41290322" vertical-offset="0" max-vertical-offset="1085">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18064517" vertical-offset="0" max-vertical-offset="1085">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -491,14 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7540395" vertical-offset="0" max-vertical-offset="1114">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/_settings.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025806451" vertical-offset="0" max-vertical-offset="1085">
@@ -507,10 +393,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20645161" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="17" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.516129" vertical-offset="756" max-vertical-offset="2520">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/vendor/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02609506" vertical-offset="0" max-vertical-offset="170688">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/foundation/scss/foundation/_functions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4536">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/foundation/scss/foundation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1400">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2580645" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.077419356" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31343284" vertical-offset="0" max-vertical-offset="1072">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/foundation/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/foundation/css/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20223673" vertical-offset="2387" max-vertical-offset="177296">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73751134" vertical-offset="0" max-vertical-offset="1101">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26119402" vertical-offset="0" max-vertical-offset="1072">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_users.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025806451" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/foundation/scss/foundation/components/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.738806" vertical-offset="0" max-vertical-offset="14224">
+          <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/foundation/scss/foundation/components/_type.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.529032" vertical-offset="0" max-vertical-offset="13160">
+          <caret line="253" column="35" selection-start-line="253" selection-start-column="20" selection-end-line="253" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8512">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18490566" vertical-offset="0" max-vertical-offset="1400">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13207547" vertical-offset="0" max-vertical-offset="1484">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56774193" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38709676" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57462686" vertical-offset="924" max-vertical-offset="3052">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
           <folding />
         </state>
       </provider>

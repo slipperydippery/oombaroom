@@ -1,26 +1,10 @@
-main{
-  position: relative;
-  margin: 0 auto;
-  min-height: 100%;
-  background: #f9f6f2;
-  background: #ffffff;
+nav {
+  background: $ghost;
+
 }
 
-.container {
-  position: relative;
-  max-width: 1080px;
-  margin: 0 auto;
+.nav__title {
 }
 
-.container--main, .container--auth, .container--page {
-  margin-top: 5rem;
+.nav__mainnav {
 }
-
-.container--home {
-  margin-top: 10rem;
-}
-
-#content {
-  margin: 0 auto;
-}
-
