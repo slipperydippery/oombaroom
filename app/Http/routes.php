@@ -11,8 +11,15 @@
 |
 */
 
+
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('users', 'UsersController');
+Route::resource('users', 'UserController');
+Route::resource('users.acts', 'UserActController');
