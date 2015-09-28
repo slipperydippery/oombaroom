@@ -8,9 +8,7 @@
     <meta name="description" content="LastBreath - leave treasures behind">
     <meta name="keywords" content="LastBreath, funeral, ritual">
 
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link href=" {{ URL::asset('/css/app.css') }} " rel="stylesheet">
+    <link href="{{ URL::asset('/css/app.css') }}" rel="stylesheet">
 
-    <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>

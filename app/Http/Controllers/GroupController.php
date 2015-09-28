@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class UsersController extends Controller
+class GroupController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -47,7 +47,7 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        return view ('users.user');
+        //
     }
 
     /**

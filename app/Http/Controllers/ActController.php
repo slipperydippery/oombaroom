@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class ActController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('acts.create');
     }
 
     /**
@@ -36,7 +36,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $act = \App\Act::create($request->all());
+        $act->user_id = Auth::user()->id;
+        $act->save();
+        return redirect('/');
     }
 
     /**
@@ -47,8 +50,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $acts = \App\Act::get();
-        return view ('users.user', compact('acts'));
+        //
     }
 
     /**

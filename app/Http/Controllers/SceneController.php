@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class SceneController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -47,8 +47,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $acts = \App\Act::get();
-        return view ('users.user', compact('acts'));
+        //
     }
 
     /**

@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Act extends Model
 {
-    use SoftDeletes;
-
     protected $fillable = [
     	'name',
     	'comment',
@@ -16,8 +14,23 @@ class Act extends Model
     	'media_link'
     ];
 
-    protected function user()
+    public function user()
     {
-    	return $this->$belongsTo('App\User');
+        return $this->belongsTo('App\User');
+    }
+
+    public function lock()
+    {
+        return $this->belongsTo('App\Lock');
+    }
+
+    public function scenes()
+    {
+        return $this->hasMany('App\Scene');
+    }
+
+    public function funeral()
+    {
+        return $this->belongsToMany('App\Funeral');
     }
 }

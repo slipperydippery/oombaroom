@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class UserActController extends Controller
+class FuneralController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -71,9 +71,19 @@
 
     </div>
 
-    <div class="row">
+    <div class="row">/resources/views/users/acts/create.blade.php)
         <div class="column">
             <h2>Media Collections</h2>
+            <a href="{{ URL::route('acts.create', [Auth::user()]) }}">Add Media</a>
+
+            <ul>
+                @foreach($acts as $act)
+                    <li>
+                        {{ $act->name }}
+                        <span> {{ $act->artist }}</span>
+                    </li>
+                @endforeach
+            </ul>
 
             <h3>Music</h3>
             <h4>Category</h4>

@@ -22,4 +22,8 @@ Route::get('/', function () {
 });
 
 Route::resource('users', 'UserController');
-Route::resource('users.acts', 'UserActController');
+Route::resource('acts', 'ActController');
+Route::resource('scenes', 'SceneController');
+Route::resource('locks', 'LockController');
+Route::resource('groups', 'GroupController');
+Route::resource('funeral', 'FuneralController');
