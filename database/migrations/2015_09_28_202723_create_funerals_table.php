@@ -14,16 +14,17 @@ class CreateFuneralsTable extends Migration
     {
         Schema::create('funerals', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned()->index();
+            $table->integer('lock_id')->unsigned()->index();
             $table->timestamps();
-        });
 
-        Schema::create('acts_funerals', function(Blueprint $table)
-        {
-            $table->integer('act_id')->unsigned()->index();
-            $table->foreign('act_id')->references('id')->on('acts')->onDelete('cascade');
-            $table->integer('funeral_id')->unsigned()->index();
-            $table->foreign('funeral_id')->references('id')->on('funerals')->onDelete('cascade');
-            $table->timestamps();
+            $table->foreign('user_id')
+                  ->references('id')
+                  ->on('users');
+            $table->foreign('lock_id')
+                  ->references('id')
+                  ->on('locks')
+                  ->onDelete('cascade');
         });
     }
 

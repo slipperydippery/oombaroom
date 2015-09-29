@@ -22,8 +22,9 @@ Route::get('/', function () {
 });
 
 Route::resource('users', 'UserController');
+Route::get('/users/user', ['as' => 'users.user', 'uses' => 'UserController@show']);
 Route::resource('acts', 'ActController');
 Route::resource('scenes', 'SceneController');
 Route::resource('locks', 'LockController');
 Route::resource('groups', 'GroupController');
-Route::resource('funeral', 'FuneralController');
+Route::resource('funerals', 'FuneralController');

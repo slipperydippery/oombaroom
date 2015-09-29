@@ -56,10 +56,34 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+
+        $lock = \App\Lock::create([
+            'user_id' => $user->id,
+        ]);;
+
+        $funeral = \App\Funeral::create([
+            'user_id' => $user->id,
+            'lock_id' => $lock->id
+        ]);
+
+        $act = \App\Act::create([
+            'user_id' => $user->id,
+            'lock_id' => $lock->id
+        ]);
+
+
+        $group = \App\Group::create([
+            'name' => 'Guest List',
+            'owner_id' => $user->id
+        ]);
+
+        return $user;
     }
+
+    protected $redirectPath = '/';
 }

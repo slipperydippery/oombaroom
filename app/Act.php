@@ -8,10 +8,13 @@ class Act extends Model
 {
     protected $fillable = [
     	'name',
-    	'comment',
+    	'commentary',
     	'media_id',
     	'user_id',
-    	'media_link'
+        'lock_id',
+    	'media_link',
+        'created_at',
+        'updated_at',
     ];
 
     public function user()

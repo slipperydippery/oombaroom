@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="column">
-            <h2>John Doe</h2>
+            <h2>{{ $user->name }}</h2>
             <div class="info-block info-block--main clearfix">
                 <div class="column small-6 medium-3">
                     Birthday
@@ -26,6 +26,8 @@
         <div class="column">
             <h2>Funeral and planning</h2>
             <!-- Overview of Funeral Info and Choices -->
+            {{ $user }}
+            {{ $user->funerals()->first() }}
             <div class="info-block clearfix">
                 <div class="column small-6 medium-3">
                     Location

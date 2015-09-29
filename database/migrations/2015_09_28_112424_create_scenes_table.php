@@ -16,7 +16,7 @@ class CreateScenesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('artist');
-            $table->text('comment');
+            $table->text('commentary');
             $table->string('media_link');
             $table->integer('media_id')->unsigned();
             $table->integer('user_id')->unsigned()->index();

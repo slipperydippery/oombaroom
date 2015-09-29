@@ -14,6 +14,8 @@ class CreateActsTable extends Migration
     {
         Schema::create('acts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->text('commentary');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('lock_id')->unsigned()->index();
