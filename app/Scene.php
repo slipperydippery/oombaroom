@@ -6,14 +6,25 @@ use Illuminate\Database\Eloquent\Model;
 
 class Scene extends Model
 {
+    protected $fillable = [
+        'title',
+        'artist',
+        'commentary',
+        'media_id',
+        'user_id',
+        'lock_id',
+        'media_link',
+        'created_at',
+        'updated_at',
+    ];
     public function user()
     {
         return $this->belongsTo('App\User');
     }
 
-    public function act()
+    public function acts()
     {
-        return $this->belongsTo('App\Act');
+        return $this->belongsToMany('App\Act');
     }
 
     public function lock()

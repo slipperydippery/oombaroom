@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class ActController extends Controller
 {
@@ -36,11 +37,19 @@ class ActController extends Controller
      */
     public function store(Request $request)
     {
-        $act = \App\Act::create($request->all());
+        $act = new \App\Act($request->all());
         $act->user_id = Auth::user()->id;
+        $act->lock_id = '1';
         $act->save();
-        return redirect('/');
+        return redirect('userprofile');
     }
+
+    public function media(\App\Act $act)
+    {
+        $act = $act;
+        return view ('acts.media', compact('act'));
+    }
+
 
     /**
      * Display the specified resource.

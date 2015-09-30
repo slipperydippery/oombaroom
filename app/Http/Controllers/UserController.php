@@ -6,6 +6,7 @@ use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -40,6 +41,14 @@ class UserController extends Controller
         //
     }
 
+    public function userprofile()
+    {
+        $user = Auth::user();
+        $scenes = $user->scenes()->get();
+        $acts = $user->acts()->get();
+        return view ('users.user', compact('user', 'scenes', 'acts'));
+    }
+
     /**
      * Display the specified resource.
      *
@@ -48,8 +57,9 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $acts = \App\Act::get();
-        return view ('users.user', compact('acts', 'user'));
+        $scenes = $user->scenes()->get();
+        $acts = $user->acts()->get();
+        return view ('users.user', compact('scenes', 'user', 'acts'));
     }
 
     /**

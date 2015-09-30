@@ -26,8 +26,6 @@
         <div class="column">
             <h2>Funeral and planning</h2>
             <!-- Overview of Funeral Info and Choices -->
-            {{ $user }}
-            {{ $user->funerals()->first() }}
             <div class="info-block clearfix">
                 <div class="column small-6 medium-3">
                     Location
@@ -75,19 +73,34 @@
 
     <div class="row">/resources/views/users/acts/create.blade.php)
         <div class="column">
-            <h2>Media Collections</h2>
-            <a href="{{ URL::route('acts.create', [Auth::user()]) }}">Add Media</a>
+            <h2>Media</h2>
+            <a href="{{ URL::route('scenes.create') }}">Add Media</a>
 
             <ul>
-                @foreach($acts as $act)
+                @foreach($scenes as $scene)
                     <li>
-                        {{ $act->name }}
-                        <span> {{ $act->artist }}</span>
+                        {{ $scene->title }}
+                        <span> {{ $scene->artist }}</span>
+                        <span> edit </span>
                     </li>
                 @endforeach
             </ul>
 
             <h3>Music</h3>
+            <a href="{{{  URL::route('acts.create') }}}">Add Scene</a>
+            @foreach($acts as $act)
+                <h4>{{ $act->title }}</h4>
+                <p>{{ $act->commentary }}</p>
+
+                @foreach($act->scenes as $scene)
+                    <p>{{ $scene->name }}</p>
+                @endforeach
+
+                <a href="{{ URL::route('acts.media', [$act->id]) }}">add media to scene</a>
+
+            @endforeach
+
+            {{ $act->scenes()->get() }}
             <h4>Category</h4>
             <ul>
                 <li>3e Piano Concerto <span>Rachmaninov</span></li>

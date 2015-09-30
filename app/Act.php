@@ -7,12 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Act extends Model
 {
     protected $fillable = [
-    	'name',
+    	'title',
     	'commentary',
-    	'media_id',
     	'user_id',
         'lock_id',
-    	'media_link',
         'created_at',
         'updated_at',
     ];
@@ -29,7 +27,7 @@ class Act extends Model
 
     public function scenes()
     {
-        return $this->hasMany('App\Scene');
+        return $this->belongsToMany('App\Scene');
     }
 
     public function funeral()

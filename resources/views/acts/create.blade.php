@@ -3,28 +3,16 @@
 @section('content')
 
     {!! Form::open([ 'route' => 'acts.store']) !!}
-        <!-- Name Form Input -->
+        <!-- Title Form Input -->
         <div class="form-group">
-        	{!! Form::label('name', 'Name:') !!}
-        	{!! Form::text('name', null, ['class' => 'form-control']) !!}
+        	{!! Form::label('title', 'Title:') !!}
+        	{!! Form::text('title', null, ['class' => 'form-control']) !!}
         </div>
 
-        <!-- Artist Form Input -->
+        <!-- Commentary Form Input -->
         <div class="form-group">
-        	{!! Form::label('artist', 'Artist:') !!}
-        	{!! Form::text('artist', null, ['class' => 'form-control']) !!}
-        </div>
-
-        <!-- Comment Form Input -->
-        <div class="form-group">
-        	{!! Form::label('comment', 'Comment:') !!}
-        	{!! Form::text('comment', null, ['class' => 'form-control']) !!}
-        </div>
-
-        <!-- Media link Form Input -->
-        <div class="form-group">
-        	{!! Form::label('media_link', 'Media link:') !!}
-        	{!! Form::text('media_link', null, ['class' => 'form-control']) !!}
+        	{!! Form::label('commentary', 'Commentary:') !!}
+        	{!! Form::text('commentary', null, ['class' => 'form-control']) !!}
         </div>
 
         <!-- Add Act Submit Field -->

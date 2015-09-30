@@ -85,5 +85,5 @@ class AuthController extends Controller
         return $user;
     }
 
-    protected $redirectPath = '/';
+    protected $redirectPath = '/userprofile';
 }

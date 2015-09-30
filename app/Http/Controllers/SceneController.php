@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class SceneController extends Controller
 {
@@ -25,7 +26,8 @@ class SceneController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('scenes.create');
     }
 
     /**
@@ -36,7 +38,13 @@ class SceneController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = Auth::user()->id;
+
+        $scene = new \App\Scene($request->all());
+        $scene->user_id = $user;
+        $scene->lock_id = '1';
+        $scene->save();
+        return redirect('userprofile');
     }
 
     /**
