@@ -67,11 +67,30 @@ class AuthController extends Controller
         ]);;
 
         $funeral = \App\Funeral::create([
+            'title' => "My Funeral",
+            'quote' => 'No one is actually dead until the ripples they cause in the world die away...',
+            'active' => true,
             'user_id' => $user->id,
             'lock_id' => $lock->id
         ]);
 
-        $act = \App\Act::create([
+        \App\Act::create([
+            'title' => 'Introduction',
+            'commentary' => 'This is where we introduce',
+            'user_id' => $user->id,
+            'lock_id' => $lock->id
+        ]);
+
+        \App\Act::create([
+            'title' => 'Burial',
+            'commentary' => 'The burial ceremony itself',
+            'user_id' => $user->id,
+            'lock_id' => $lock->id
+        ]);
+
+        \App\Act::create([
+            'title' => 'Rememberance',
+            'commentary' => 'Time to talk',
             'user_id' => $user->id,
             'lock_id' => $lock->id
         ]);
@@ -79,7 +98,7 @@ class AuthController extends Controller
 
         $group = \App\Group::create([
             'name' => 'Guest List',
-            'owner_id' => $user->id
+            'user_id' => $user->id
         ]);
 
         return $user;

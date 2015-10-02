@@ -24,8 +24,11 @@ Route::get('/', function () {
 Route::resource('users', 'UserController');
 Route::get('/userprofile', ['as' => 'users.userprofile', 'uses' => 'UserController@userprofile']);
 Route::resource('acts', 'ActController');
-Route::get('/acts/{act}/media', ['as' => 'acts.media', 'uses' => 'ActController@media']);
+Route::get('/acts/{acts}/media', ['as' => 'acts.media', 'uses' => 'ActController@media']);
+Route::get('/acts/addscene/{acts}/{scenes}', ['as' => 'acts.addscene', 'uses' => 'ActController@addscene']);
+Route::get('/acts/removescene/{acts}/{scenes}', ['as' => 'acts.removescene', 'uses' => 'ActController@removescene']);
 Route::resource('scenes', 'SceneController');
 Route::resource('locks', 'LockController');
 Route::resource('groups', 'GroupController');
 Route::resource('funerals', 'FuneralController');
+Route::resource('guests', 'GuestController');

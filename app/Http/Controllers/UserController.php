@@ -44,9 +44,7 @@ class UserController extends Controller
     public function userprofile()
     {
         $user = Auth::user();
-        $scenes = $user->scenes()->get();
-        $acts = $user->acts()->get();
-        return view ('users.user', compact('user', 'scenes', 'acts'));
+        return redirect()->route('users.show', [$user]);
     }
 
     /**
@@ -59,7 +57,9 @@ class UserController extends Controller
     {
         $scenes = $user->scenes()->get();
         $acts = $user->acts()->get();
-        return view ('users.user', compact('scenes', 'user', 'acts'));
+        $funeral = $user->funerals()->get()->where('active', 1)->first();
+        $guestlist = $user->own_groups()->get()->first();
+        return view ('users.user', compact('scenes', 'user', 'acts', 'funeral', 'guestlist'));
     }
 
     /**

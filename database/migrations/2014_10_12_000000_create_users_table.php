@@ -16,12 +16,18 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone_mob');
+            $table->string('phone_home');
+            $table->string('adress_street');
+            $table->string('adress_city');
+            $table->string('adress_postalcode');
+            $table->adress('adress_country');
             $table->string('password', 60);
             $table->rememberToken();
             $table->timestamps();
         });
 
-        Schema::create('users_users', function(Blueprint $table)
+        Schema::create('user_user', function(Blueprint $table)
         {
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

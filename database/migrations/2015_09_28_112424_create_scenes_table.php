@@ -43,7 +43,7 @@ class CreateScenesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('act_scenes');
+        Schema::drop('act_scene');
         Schema::drop('scenes');
     }
 }

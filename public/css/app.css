@@ -6572,6 +6572,24 @@ th.hide-for-touch {
 nav {
   background: #FAFAFA; }
 
+.header {
+  padding: 2rem 0 4rem;
+  background: #3c948b; }
+  .header h1 {
+    text-align: center; }
+
+p.subheader {
+  text-align: center;
+  font-style: italic;
+  color: inherit;
+  margin: 0 0 2rem; }
+
+.info-block {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  width: 98%;
+  margin: 0 auto; }
+
 @font-face {
   font-family: 'merloround_regular';
   src: url("fonts/merlo-roundregular-webfont.eot");
@@ -6588,10 +6606,5 @@ nav {
 
 .nav__title h1 {
   color: #3c948b; }
-
-.info-block {
-  background: #DDDDDD;
-  width: 98%;
-  margin: 0 auto; }
 
 /*# sourceMappingURL=app.css.map */

@@ -16,8 +16,17 @@ class CreateGroupsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('commentary');
-            $table->integer('owner_id')->unsigned()->index();
-            $table->foreign('owner_id')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('user_id')->unsigned()->index();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->timestamps();
+        });
+
+        Schema::create('group_user', function(Blueprint $table)
+        {
+            $table->integer('user_id')->unsigned()->index();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('group_id')->unsigned()->index();
+            $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -29,6 +38,7 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
+        Schema::drop('group_user');
         Schema::drop('groups');
     }
 }

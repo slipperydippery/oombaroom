@@ -7,8 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 class Funeral extends Model
 {
     protected $fillable = [
-        'name',
+        'title',
         'commentary',
+        'quote',
+        'ceremony',
+        'burial_type',
+        'location',
+        'casket',
+        'song_name',
+        'song_id',
+        'song_link',
+        'picture_id',
+        'picture_link',
+        'picture_alt',
+        'active',
         'user_id',
         'lock_id'
     ];
