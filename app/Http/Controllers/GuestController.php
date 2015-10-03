@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class GuestController extends Controller
 {
@@ -23,9 +24,9 @@ class GuestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(\App\User $user)
     {
-        //
+        return view('guests.create', compact('user'));
     }
 
     /**
@@ -36,7 +37,12 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = Auth::user()->id;
+
+        $guest = new \App\Guest($request->all());
+        $guest->owner_id = $user;
+        $guest->save();
+        return redirect('userprofile');
     }
 
     /**

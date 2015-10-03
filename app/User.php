@@ -75,4 +75,14 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasMany('App\Funeral');
     }
+
+    public function own_guest()
+    {
+        return $this->hasMany('App\Guest');
+    }
+
+    public function guest()
+    {
+        return $this->hasMany('App\Guest');
+    }
 }

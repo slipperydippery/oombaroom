@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('adress_street');
             $table->string('adress_city');
             $table->string('adress_postalcode');
-            $table->adress('adress_country');
+            $table->string('adress_country');
             $table->string('password', 60);
             $table->rememberToken();
             $table->timestamps();
@@ -44,7 +44,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users_users');
+        Schema::drop('user_user');
         Schema::drop('users');
     }
 }

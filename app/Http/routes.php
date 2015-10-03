@@ -30,5 +30,5 @@ Route::get('/acts/removescene/{acts}/{scenes}', ['as' => 'acts.removescene', 'us
 Route::resource('scenes', 'SceneController');
 Route::resource('locks', 'LockController');
 Route::resource('groups', 'GroupController');
-Route::resource('funerals', 'FuneralController');
-Route::resource('guests', 'GuestController');
+Route::resource('users.funerals', 'FuneralController');
+Route::resource('users.guests', 'GuestController');

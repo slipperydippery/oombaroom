@@ -69,7 +69,7 @@
     <div class="row">
         <div class="column">
             <h2>Media</h2>
-            <a href="{{ URL::route('scenes.create') }}">Add Media</a>
+            <a href="{{ URL::route('scenes.create', [$user->id]) }}">Add Media</a>
 
         </div>
     </div>
@@ -78,12 +78,11 @@
         <div class="column">
 
             <h2>{{ $guestlist->name }}</h2>
-            <ul>
-                <li>Maarten de Jager</li>
-                <li>Maarten de Jager</li>
-                <li>Maarten de Jager</li>
-                <li>Maarten de Jager</li>
-            </ul>
+            @foreach($user->guest as $guest)
+
+            @endforeach
+
+            <a href="{{ URL::route('users.guests.create', [$user])}}">add a guest</a>
         </div>
 
     </div>
