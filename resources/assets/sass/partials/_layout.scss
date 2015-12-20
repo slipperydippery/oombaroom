@@ -16,11 +16,15 @@ nav {
 }
 
 p.subheader {
-  text-align: center;
   font-style: italic;
 
   color: inherit;
   margin: 0 0 2rem;
+}
+
+p.subheader--main {
+  text-align: center;
+
 }
 
 
@@ -34,3 +38,17 @@ p.subheader {
 .info-block--main {
 
 }
+
+.info-block--schedule{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.info-block__section {
+  background: $silver;
+  margin: 1px;
+}
+
+.info-block__section:last-child {
+//  background: red;
+}
+

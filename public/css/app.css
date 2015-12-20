@@ -6579,16 +6579,25 @@ nav {
     text-align: center; }
 
 p.subheader {
-  text-align: center;
   font-style: italic;
   color: inherit;
   margin: 0 0 2rem; }
+
+p.subheader--main {
+  text-align: center; }
 
 .info-block {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2);
   width: 98%;
   margin: 0 auto; }
+
+.info-block--schedule {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+
+.info-block__section {
+  background: #EFEFEF;
+  margin: 1px; }
 
 @font-face {
   font-family: 'merloround_regular';

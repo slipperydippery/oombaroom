@@ -18,6 +18,7 @@ class Guest extends Model
 		'note',
 		'owner_id',
 		'user_id',
+        'linked',
 	];
 
     public function owner()
@@ -32,6 +33,6 @@ class Guest extends Model
 
     public function setUserIdAttribute($value)
     {
-        $this->attributes['user_id'] = $value ?: null;
+        $this->attributes['user_id'] = $value ? $value : '1';
     }
 }

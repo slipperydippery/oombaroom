@@ -32,3 +32,4 @@ Route::resource('locks', 'LockController');
 Route::resource('groups', 'GroupController');
 Route::resource('users.funerals', 'FuneralController');
 Route::resource('users.guests', 'GuestController');
+Route::resource('users.speeches', 'SpeechController');

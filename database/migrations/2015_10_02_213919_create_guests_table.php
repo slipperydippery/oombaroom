@@ -25,6 +25,7 @@ class CreateGuestsTable extends Migration
             $table->string('note');
             $table->integer('owner_id')->unsigned()->index();
             $table->foreign('owner_id')->references('id')->on('users')->onDelete('cascade');
+            $table->boolean('linked');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();

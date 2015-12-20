@@ -15,10 +15,9 @@ class CreateScenesTable extends Migration
         Schema::create('scenes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('artist');
             $table->text('commentary');
-            $table->string('media_link');
-            $table->integer('media_id')->unsigned();
+            $table->integer('sceneable_id');
+            $table->string('sceneable_type');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('lock');

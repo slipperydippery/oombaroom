@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="header headder--user">
+    <div class="header header--user">
       <div class="row">
           <div class="column">
               <h1>{{ $user->name }}</h1>
@@ -50,16 +50,25 @@
         <div class="column">
             <h2>Funeral and planning</h2>
             <!-- Overview of Funeral Info and Choices -->
-            @foreach($acts as $act)
-              <h3>{{$act->title}}</h3>
-              <p class="subhead subhead--h3">{{$act->commentary}}</p>
+            <div class="row info-block info-block--schedule">
+                <div class="column">
 
-              @foreach($act->scenes as $scene)
-                  <p>{{ $scene->name }}</p>
-              @endforeach
+                    @foreach($acts as $act)
+                        <div class="row">
+                            <div class="column info-block__section">
+                              <h3>{{$act->title}}</h3>
+                              <p class="subheader subheader--h3">{{$act->commentary}}</p>
+                              @foreach($act->scenes as $scene)
+                                  <p>{{ $scene->title }}</p>
+                              @endforeach
 
-              <a href="{{ URL::route('acts.media', [$act->id]) }}">add media to scene</a>
-            @endforeach
+                              <a href="{{ URL::route('acts.media', [$act->id]) }}">add media to scene</a>
+
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
 
 
         </div>
@@ -69,6 +78,9 @@
     <div class="row">
         <div class="column">
             <h2>Media</h2>
+            @foreach($user->scenes as $scene)
+                <p>{{ $scene->title }}</p>
+            @endforeach
             <a href="{{ URL::route('scenes.create', [$user->id]) }}">Add Media</a>
 
         </div>
@@ -77,15 +89,14 @@
     <div class="row">
         <div class="column">
 
-            <h2>{{ $guestlist->name }}</h2>
-            @foreach($user->guest as $guest)
-
+            <h2>Guest List</h2>
+            @foreach($user->own_guests as $guest)
+                <p><a href="{{ URL::route('users.guests.edit',[$user, $guest]) }}">{{ $guest->name }}</a></p>
             @endforeach
 
             <a href="{{ URL::route('users.guests.create', [$user])}}">add a guest</a>
         </div>
 
     </div>
-
 
 @stop

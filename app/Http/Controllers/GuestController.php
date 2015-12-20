@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Guest;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -24,7 +26,7 @@ class GuestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(\App\User $user)
+    public function create(User $user)
     {
         return view('guests.create', compact('user'));
     }
@@ -39,8 +41,9 @@ class GuestController extends Controller
     {
         $user = Auth::user()->id;
 
-        $guest = new \App\Guest($request->all());
+        $guest = new Guest($request->all());
         $guest->owner_id = $user;
+        $guest->user_id = null; 
         $guest->save();
         return redirect('userprofile');
     }
@@ -62,9 +65,10 @@ class GuestController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user, $guest_id)
     {
-        //
+        $guest = Guest::findOrFail($guest_id);
+        return view('guests.edit', compact('user', 'guest'));
     }
 
     /**

@@ -29,4 +29,4 @@ elixir(function(mix) {
 
     mix.livereload();
 
-});
+}); 

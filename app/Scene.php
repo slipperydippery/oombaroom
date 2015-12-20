@@ -8,15 +8,20 @@ class Scene extends Model
 {
     protected $fillable = [
         'title',
-        'artist',
         'commentary',
-        'media_id',
+        'sceneable_id',
+        'sceneable_type',
         'user_id',
         'lock_id',
-        'media_link',
         'created_at',
         'updated_at',
     ];
+
+    public function sceneable()
+    {
+        return $this->morphTo();
+    }
+
     public function user()
     {
         return $this->belongsTo('App\User');

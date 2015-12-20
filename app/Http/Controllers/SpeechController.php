@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+class SpeechController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,24 +39,15 @@ class UserController extends Controller
         //
     }
 
-    public function userprofile()
-    {
-        $user = Auth::user();
-        return redirect()->route('users.show', [$user]);
-    }
-
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show($id)
     {
-        $scenes = $user->scenes()->get();
-        $acts = $user->acts()->get();
-        $funeral = $user->funerals()->get()->where('active', 1)->first();
-        return view ('users.user', compact('scenes', 'user', 'acts', 'funeral', 'guestlist'));
+        //
     }
 
     /**
