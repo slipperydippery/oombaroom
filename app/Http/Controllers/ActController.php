@@ -38,14 +38,14 @@ class ActController extends Controller
      */
     public function addscene(Act $act, $scene)
     {
-      $act->scenes()->attach($scene);
-      return redirect()->route('acts.media', compact('act'));
+        $act->scenes()->attach($scene);
+        return redirect()->route('acts.media', compact('act'));
     }
 
     public function removescene(Act $act, $scene)
     {
-      $act->scenes()->detach($scene);
-      return redirect()->route('acts.media', compact('act'));
+        $act->scenes()->detach($scene);
+        return redirect()->route('acts.media', compact('act'));
     }
 
     /**
@@ -66,8 +66,8 @@ class ActController extends Controller
     public function media(Act $act)
     {
       //return($act);
-      $user = Auth::user();
-      return view ('acts.media', compact('act', 'user'));
+        $user = Auth::user();
+        return view('acts.media', compact('act', 'user'));
     }
 
 

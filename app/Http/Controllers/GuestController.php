@@ -43,7 +43,7 @@ class GuestController extends Controller
 
         $guest = new Guest($request->all());
         $guest->owner_id = $user;
-        $guest->user_id = null; 
+        $guest->user_id = null;
         $guest->save();
         return redirect('userprofile');
     }

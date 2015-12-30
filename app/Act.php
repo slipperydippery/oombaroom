@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Act extends Model
 {
     protected $fillable = [
-    	'title',
-    	'commentary',
-    	'user_id',
+        'title',
+        'commentary',
+        'user_id',
         'lock_id',
         'created_at',
         'updated_at',
