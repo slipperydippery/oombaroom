@@ -58,7 +58,7 @@ class UserController extends Controller
         $scenes = $user->scenes()->get();
         $acts = $user->acts()->get();
         $funeral = $user->funerals()->get()->where('active', 1)->first();
-        return view ('users.user', compact('scenes', 'user', 'acts', 'funeral', 'guestlist'));
+        return view('users.user', compact('scenes', 'user', 'acts', 'funeral', 'guestlist'));
     }
 
     /**

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Speech extends Model
 {
-    protected  $fillable = [
+    protected $fillable = [
         'speaker',
         'topic',
         'excerpt',
@@ -16,6 +16,4 @@ class Speech extends Model
     {
         return $this->morphMany('App\Scene', 'sceneable');
     }
-
 }
-

@@ -64,7 +64,8 @@ class AuthController extends Controller
 
         $lock = \App\Lock::create([
             'user_id' => $user->id,
-        ]);;
+        ]);
+        ;
 
         $funeral = \App\Funeral::create([
             'title' => "My Funeral",
